@@ -10,7 +10,7 @@ fi
 delay=
 shift # Remove the first argument so we can loop over commands
 # Execute each command with the specified delay
-for command in "$#"; do
+for command in "$@"; do
 echo "Executing: $command"
 eval "$command" # Execute the command
 echo "Waiting for $delay seconds..."
